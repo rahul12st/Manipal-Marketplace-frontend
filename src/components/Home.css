@@ -1,0 +1,114 @@
+/* General Layout Enhancements */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    background-color: 
+    #bdb5c0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Text Styling */
+.card p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #E91E63;
+    font-weight: bold;
+}
+
+.text-danger {
+    color: #E91E63;
+}
+
+.text-success {
+    color: #3b28a7;
+}
+
+/* Icon Styling */
+.icons {
+    font-size: 24px;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.icons:hover {
+    color: #E91E63;
+}
+
+/* Icon Container Styling */
+.icon-con {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-con:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Button Styling */
+.clear-btn {
+    height: 30px;
+    background-color: #E91E63;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+    background-color: #C2185B;
+}
+
+/* Search Results Styling */
+h5 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}

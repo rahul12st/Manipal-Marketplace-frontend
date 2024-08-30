@@ -1,0 +1,137 @@
+/* Container Styling */
+.p-3 {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Input Field Styling */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Select Field Styling */
+select.form-control {
+    cursor: pointer;
+}
+
+/* File Input Styling */
+input[type="file"].form-control {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Submit Button Styling */
+.btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Form Layout Enhancements */
+input.form-control,
+select.form-control,
+button.btn-primary {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .p-3 {
+        padding: 15px;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn-primary {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .p-3 {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .form-control {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .btn-primary {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
