@@ -11,6 +11,12 @@ function Login() {
     const [password, setpassword] = useState('');
 
     const handleApi = () => {
+        console.log("Login button clicked!"); // Add this log to check if the function is triggered
+
+    if (!username || !password) {
+        alert('Username and password are required');
+        return;
+    }
         const url = API_URL + '/login';
         const data = { username, password };
         axios.post(url, data)
