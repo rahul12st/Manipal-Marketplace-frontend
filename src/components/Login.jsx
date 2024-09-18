@@ -19,6 +19,7 @@ function Login() {
                     if (res.data.token) {
                         localStorage.setItem('token', res.data.token);
                         localStorage.setItem('userId', res.data.userId);
+                         console.log("Navigating to home...");
                         navigate('/');
                     }
                 }
