@@ -4,8 +4,6 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import Home from './components/Home';
 import Login from './components/Login';
@@ -17,14 +15,18 @@ import CategoryPage from './components/CategoryPage';
 import MyProducts from './components/MyProducts';
 import MyProfile from './components/MyProfile';
 
+// Directly set the backend API URL
+const API_URL = 'https://manipal-marketplace-backend-dp7l.vercel.app';
+
+// Use the API URL in your components when making requests
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (<Home />),
+    element: (<Home apiUrl={API_URL} />),
   },
   {
     path: "/category/:catName",
-    element: (<CategoryPage />),
+    element: (<CategoryPage apiUrl={API_URL} />),
   },
   {
     path: "about",
@@ -32,31 +34,31 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: (<Login />),
+    element: (<Login apiUrl={API_URL} />),
   },
   {
     path: "/signup",
-    element: (<Signup />),
+    element: (<Signup apiUrl={API_URL} />),
   },
   {
     path: "/add-product",
-    element: (<AddProduct />),
+    element: (<AddProduct apiUrl={API_URL} />),
   },
   {
     path: "/liked-products",
-    element: (<LikedProducts />),
+    element: (<LikedProducts apiUrl={API_URL} />),
   },
   {
     path: "/my-products",
-    element: (<MyProducts />),
+    element: (<MyProducts apiUrl={API_URL} />),
   },
   {
     path: "/product/:productId",
-    element: (<ProductDetail />),
+    element: (<ProductDetail apiUrl={API_URL} />),
   },
   {
     path: "/my-profile",
-    element: (<MyProfile />),
+    element: (<MyProfile apiUrl={API_URL} />),
   },
 ]);
 
